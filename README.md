@@ -1,5 +1,5 @@
 # Laravel + TypeScript + React 🚜
-Boilerplate code featuring all the awesomeness of [Laravel 5.8](https://github.com/laravel/laravel), [TypeScript 3.3](https://github.com/Microsoft/TypeScript), [React 16.8](https://github.com/facebook/react).
+Boilerplate code featuring all the awesomeness of [Laravel 5.8](https://github.com/laravel/laravel), [TypeScript 3.5](https://github.com/Microsoft/TypeScript), [React 16.8](https://github.com/facebook/react).
 
 ## Also Starring:
 - Redux (with Thunk and DevTools)
