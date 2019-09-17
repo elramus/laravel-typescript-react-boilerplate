@@ -6,16 +6,19 @@ import loading from './loading/reducers'
 const rootReducer = combineReducers({
   loading,
 })
-
 export type AppState = ReturnType<typeof rootReducer>;
 
+const composeEnhancers = composeWithDevTools({
+  trace: true,
+})
 const store = createStore(
   rootReducer,
-  composeWithDevTools(
+  composeEnhancers(
     applyMiddleware(
       thunkMiddleware,
     ),
   ),
 )
+
 
 export default store
