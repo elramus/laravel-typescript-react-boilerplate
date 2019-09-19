@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import styled, { keyframes } from '../utils/styledComponents'
 
 const float = keyframes`
@@ -32,24 +32,21 @@ const Logos = styled('div')`
   }
 `
 
-class App extends Component<{}, {}> {
-  componentDidMount() {
+const App = () => {
+  useEffect(() => {
     console.log('I\'m alive, awake, alert, enthusiastic 👍')
-  }
+  }, [])
 
-  render() {
-    return (
-      <Container>
-        <h4>THIS IS</h4>
-        <h1>LARAVEL + TYPESCRIPT + REACT</h1>
-        <Logos>
-          <img src="images/laravel-logo.png" alt="Laravel Logo" />
-          <img src="images/ts-logo.png" alt="Typescript Logo" />
-          <img src="images/react-logo.png" alt="React Logo" />
-        </Logos>
-      </Container>
-    )
-  }
+  return (
+    <Container>
+      <h1>LARAVEL + TYPESCRIPT + REACT</h1>
+      <Logos>
+        <img src="images/laravel-logo.png" alt="Laravel Logo" />
+        <img src="images/ts-logo.png" alt="Typescript Logo" />
+        <img src="images/react-logo.png" alt="React Logo" />
+      </Logos>
+    </Container>
+  )
 }
 
 export default App
